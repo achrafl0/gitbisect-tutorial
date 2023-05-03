@@ -10,3 +10,7 @@ const itemPrices: Record<number, number> = {
 export const getItemPrice = (itemId: number) => {
   return Object.keys(itemPrices).includes(itemId.toString()) ? itemPrices[itemId] : 0;
 };
+
+export const getPricesFromCartItems = (cart: Cart) => {
+  return cart.items.map(getItemPrice);
+};
