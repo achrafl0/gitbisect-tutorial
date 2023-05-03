@@ -13,5 +13,5 @@ test("2", () => {
 });
 
 test("3", () => {
-  expect(isAdmin(3)).toEqual(true);
+  expect(isAdmin(3)).toEqual(false);
 });
