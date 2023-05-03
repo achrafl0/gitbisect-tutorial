@@ -9,4 +9,8 @@ export class Cart {
   addToCart(itemId: number) {
     this.items.push(itemId);
   }
+
+  removeFromCart(itemId: number) {
+    this.items = this.items.filter((item) => item === itemId);
+  }
 }
