@@ -19,3 +19,15 @@ test("3", () => {
 test("10 IMPORTANT : USER 32 IS A CUSTOMER", () => {
   expect(isUserAdmin(32)).toEqual(false);
 });
+
+test("4", () => {
+  expect(isUserAdmin(4)).toEqual(true);
+});
+
+test("5", () => {
+  expect(isUserAdmin(5)).toEqual(false);
+});
+
+test("6", () => {
+  expect(isUserAdmin(8)).toEqual(true);
+});
