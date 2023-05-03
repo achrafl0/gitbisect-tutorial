@@ -31,3 +31,7 @@ test("5", () => {
 test("6", () => {
   expect(isUserAdmin(8)).toEqual(true);
 });
+
+test("7", () => {
+  expect(isUserAdmin(16)).toEqual(true);
+});
